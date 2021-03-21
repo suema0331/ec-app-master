@@ -1,0 +1,24 @@
+<mat-toolbar>
+  <a routerLink="/" mat-button>Online Shop</a>
+  <div class="spacer">
+    <form class="search">
+      <input [matAutocomplete]="auto" type="text" class="search__input" autocomplete="off">
+      <button class="search__button">
+        <mat-icon class="mat-18">search</mat-icon>
+      </button>
+    </form>
+    <mat-autocomplete #auto="matAutocomplete" >
+      <mat-option>xxxx</mat-option>
+      <mat-option>xxxx</mat-option>
+      <mat-option>xxxx</mat-option>
+      <mat-option>xxxx</mat-option>
+    </mat-autocomplete>
+  </div>
+  <button mat-raised-button color="primary">login</button>
+</mat-toolbar>
+
+<router-outlet></router-outlet>
+
+<footer>
+  <p>&copy; Produced by Ema</p>
+</footer>
